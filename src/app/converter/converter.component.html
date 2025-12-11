@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>JSON / XML to Excel Converter</h2>
+
+  <textarea [(ngModel)]="inputText" placeholder="Paste your JSON or XML here"></textarea>
+
+  <div class="btn-group">
+    <button (click)="convertJson()">Convert JSON → Excel</button>
+    <button (click)="convertXml()">Convert XML → Excel</button>
+  </div>
+
+  <p class="status">{{ statusMessage }}</p>
+</div>
